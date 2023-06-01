@@ -1,5 +1,5 @@
 import express from 'express';
-import { addSong, getAllSongs, getSongById } from '../modules/handlers.js';
+import { addSong, deleteSong, editSong, getAllSongs, getSongById } from '../modules/handlers.js';
 const router = express.Router();
 
 router.get('/', async (req, res, next) => {
@@ -33,7 +33,7 @@ router.get('/songs', async (req, res, next) => {
         res.json({message: 'error occurred during all songs request', payload: error});
     }
     next();
-})
+});
 
 router.get('/songs/:id', async (req, res, next) => {
     try {
@@ -44,6 +44,29 @@ router.get('/songs/:id', async (req, res, next) => {
         res.json({message: 'error occurred during song by id request', payload: error});
     }
     next();
-})
+});
+
+router.patch('/songs/:id', async (req, res, next) => {
+    console.log(req.body)
+    try {
+        const {name, artist, lyrics} = req.body;
+        const data = await editSong(Number(req.params.id), name, artist, lyrics);
+    } catch (error) {
+        res.status(401);
+        res.json({message: 'error occurred during editing song', payload: error});
+    }
+    next();
+});
+
+router.delete('/songs/:id', async (req, res, next) => {
+    try {
+        const data = await deleteSong(Number(req.params.id));
+        res.json({success: true, message: `song with id:${id} deleted`});
+    } catch (error) {
+        res.status(400);
+        res.json({message: 'error occurred when deleting song', payload: error});
+    }
+    next();
+});
 
 export default router;
