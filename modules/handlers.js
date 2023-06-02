@@ -20,7 +20,7 @@ export const getAllSongs = async () => {
 
 export const editSong = async (id, song, artist, lyrics) => {
     // patch song
-    const res = await pool.query('UPDATE songs SET name = ($1), artist = ($2), lyrics = ($3) WHERE id = ($4) RETURNING *;', [song, artist, lyrics, id]);
+    const res = await pool.query('UPDATE songs SET name=($1), artist=($2), lyrics=($3) WHERE id=($4) RETURNING*;', [song, artist, lyrics, id]);
     return res.rows;
 }
 

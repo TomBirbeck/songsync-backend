@@ -47,10 +47,10 @@ router.get('/songs/:id', async (req, res, next) => {
 });
 
 router.patch('/songs/:id', async (req, res, next) => {
-    console.log(req.body)
     try {
         const {name, artist, lyrics} = req.body;
         const data = await editSong(Number(req.params.id), name, artist, lyrics);
+        res.json({success: true, payload: data});
     } catch (error) {
         res.status(401);
         res.json({message: 'error occurred during editing song', payload: error});
@@ -61,7 +61,7 @@ router.patch('/songs/:id', async (req, res, next) => {
 router.delete('/songs/:id', async (req, res, next) => {
     try {
         const data = await deleteSong(Number(req.params.id));
-        res.json({success: true, message: `song with id:${id} deleted`});
+        res.json({success: true, payload: data});
     } catch (error) {
         res.status(400);
         res.json({message: 'error occurred when deleting song', payload: error});
