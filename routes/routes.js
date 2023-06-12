@@ -10,7 +10,7 @@ router.get('/', async (req, res, next) => {
         res.json({message: 'error occurred', payload: error});
     }
     next();
-})
+});
 
 router.post('/songs', async (req,res, next) => {
     try {
