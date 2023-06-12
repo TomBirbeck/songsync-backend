@@ -8,4 +8,4 @@ async function deleteTable(tableName) {
 
 //PUT TABLE NAME OF THE TABLE YOU WANT TO DELETE AS ARGUMENT TO THE FUNCTION BELOW
 
-deleteTable('songs');
+deleteTable('todays_song');
