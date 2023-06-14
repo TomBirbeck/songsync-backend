@@ -1,6 +1,8 @@
 import pool from '../db/index.js'
 import { scheduleJob, RecurrenceRule } from 'node-schedule';
 
+// ~~~ SONGS TABLE ~~~
+
 export const addSong = async (song, artist, lyrics) => {
     //add song to database
     const res = await pool.query('INSERT INTO songs (name, artist, lyrics) VALUES (($1), ($2), ($3)) RETURNING * ;', [song, artist, lyrics]);
@@ -15,7 +17,7 @@ export const getSongById = async (id) => {
 
 export const getAllSongs = async () => {
     // get all songs from db
-    const res = await pool.query('SELECT * from used_songs;');
+    const res = await pool.query('SELECT * from songs;');
     return res.rows;
 }
 
@@ -31,16 +33,56 @@ export const deleteSong = async (id) => {
     return res.rows;
 }
 
-const updateSong = async (id) => {
-    const deleteSong = await pool.query('DELETE FROM todays_song;');
-    const song =  await pool.query('SELECT * FROM songs WHERE id = ($1);', [id]);
-    const res = await pool.query('INSERT INTO todays_song (id, name, artist, lyrics) VALUES (($1), ($2), ($3), ($4)) RETURNING * ;', [song.rows[0].id, song.rows[0].name, song.rows[0].artist, song.rows[0].lyrics]);
-    const used = await pool.query('INSERT INTO used_songs (id, name) VALUES (($1), ($2)) RETURNING * ;', [song.rows[0].id, song.rows[0].name]);
+// ~~~ TODAY'S SONG ~~~
+
+export const getTodaysSong = async () => {
+    const res = await pool.query('SELECT * from todays_song;');
+    return res.rows;
 }
 
+export const addTodaysSong = async (song) => {
+    const res = await pool.query('INSERT INTO todays_song (id, name, artist, lyrics) VALUES (($1), ($2), ($3), ($4)) RETURNING * ;', [song.id, song.name, song.artist, song.lyrics])
+    return res.rows;
+}
+
+export const emptyTodaysSong = async () => {
+    const res = await pool.query('DELETE FROM todays_song;');
+    return res.rows;
+}
+
+// ~~~ USED SONGS ~~~
+
+export const addUsedSong = async (song) => {
+const res = await pool.query('INSERT INTO used_songs (id, name) VALUES (($1), ($2)) RETURNING * ;', [song.id, song.name]);
+}
+
+export const getAllUsedSongs = async () => {
+    const res = await pool.query('SELECT * FROM used_songs;');
+    return res.rows;
+}
+
+export const getUsedSongById = async (id) => {
+    const res = await pool.query('SELECT * from songs WHERE id = ($1);', [id]);
+    return res.rows;
+}
+
+export const deleteAllUsedSongs = async () => {
+    const res = await pool.query('DELETE FROM used_songs;')
+}
+
+// ~~~ DAILY SONG EVENT ~~~
+
 const checkSong = async (id) => {
-const res = await pool.query('SELECT * FROM used_songs WHERE id = ($1);', [id]);
+const res = await getSongById(id);
 return res.rows
+}
+
+const updateSong = async (id) => {
+    const deleteSong = await pool.query('DELETE FROM todays_song;');
+    const song =  await getSongById(id);
+    console.log(song)
+    const res = await addTodaysSong(song);
+    const used = await addUsedSong(song);
 }
 
 const randomNum = (min, max) =>  {
