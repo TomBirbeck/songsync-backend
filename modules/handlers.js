@@ -21,6 +21,11 @@ export const getAllSongs = async () => {
     return res.rows;
 }
 
+export const getSongCount = async () => {
+    const res = await pool.query('SELECT * from songs;');
+    return res.rowCount;
+}
+
 export const editSong = async (id, song, artist, lyrics) => {
     // patch song
     const res = await pool.query('UPDATE songs SET name=($1), artist=($2), lyrics=($3) WHERE id=($4) RETURNING*;', [song, artist, lyrics, id]);
@@ -41,7 +46,7 @@ export const getTodaysSong = async () => {
 }
 
 export const addTodaysSong = async (song) => {
-    const res = await pool.query('INSERT INTO todays_song (id, name, artist, lyrics) VALUES (($1), ($2), ($3), ($4)) RETURNING * ;', [song.id, song.name, song.artist, song.lyrics])
+    const res = await pool.query('INSERT INTO todays_song (id, name, artist, lyrics) VALUES (($1), ($2), ($3), ($4)) RETURNING * ;', [song[0].id, song[0].name, song[0].artist, song[0].lyrics])
     return res.rows;
 }
 
@@ -53,7 +58,8 @@ export const emptyTodaysSong = async () => {
 // ~~~ USED SONGS ~~~
 
 export const addUsedSong = async (song) => {
-const res = await pool.query('INSERT INTO used_songs (id, name) VALUES (($1), ($2)) RETURNING * ;', [song.id, song.name]);
+const res = await pool.query('INSERT INTO used_songs (id, name) VALUES (($1), ($2)) RETURNING * ;', [song[0].id, song[0].name]);
+return res.rows
 }
 
 export const getAllUsedSongs = async () => {
@@ -62,7 +68,7 @@ export const getAllUsedSongs = async () => {
 }
 
 export const getUsedSongById = async (id) => {
-    const res = await pool.query('SELECT * from songs WHERE id = ($1);', [id]);
+    const res = await pool.query('SELECT * from used_songs WHERE id = ($1);', [id]);
     return res.rows;
 }
 
@@ -73,15 +79,18 @@ export const deleteAllUsedSongs = async () => {
 // ~~~ DAILY SONG EVENT ~~~
 
 const checkSong = async (id) => {
-const res = await getSongById(id);
-return res.rows
+    const res = await getUsedSongById(id);
+    if (res.length > 0){
+        return false
+    } else {
+        return true
+    }
 }
 
 const updateSong = async (id) => {
     const deleteSong = await pool.query('DELETE FROM todays_song;');
     const song =  await getSongById(id);
-    console.log(song)
-    const res = await addTodaysSong(song);
+    const today = await addTodaysSong(song);
     const used = await addUsedSong(song);
 }
 
@@ -95,20 +104,20 @@ rule.minute = 0;
 rule.tz = 'Etc/UTC';
 
 const job = scheduleJob(rule, async function(){
-    let id = randomNum(1, 6);
+    let id = randomNum(1, await getSongCount());
     let songAlreadyUsed = await checkSong(id);
-    while (songAlreadyUsed.length > 0){
-     id = randomNum(1, 6);
+    while (!songAlreadyUsed){
+     id = randomNum(1, await getSongCount());
      songAlreadyUsed = await checkSong(id);
     }
      updateSong(id);
    });
 
-// const jobThree = scheduleJob('52 * * * *', async function(){
-//    let id = randomNum(1, 6);
+// const jobThree = scheduleJob('40 * * * *', async function(){
+//    let id = randomNum(1, await getSongCount());
 //    let songAlreadyUsed = await checkSong(id);
-//    while (songAlreadyUsed.length > 0){
-//     id = randomNum(1, 6);
+//    while (!songAlreadyUsed){
+//     id = randomNum(1, await getSongCount());
 //     songAlreadyUsed = await checkSong(id);
 //    }
 //     updateSong(id);

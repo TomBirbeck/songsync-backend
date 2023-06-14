@@ -1,6 +1,8 @@
 import express from 'express';
-import { addSong, deleteSong, editSong, getAllSongs, getSongById } from '../modules/handlers.js';
+import { addSong, deleteSong, editSong, getAllSongs, getAllUsedSongs, getSongById, getTodaysSong } from '../modules/handlers.js';
 const router = express.Router();
+
+// ~~~ SONGS TABLE ROUTES ~~~
 
 router.get('/', async (req, res, next) => {
     try {
@@ -68,5 +70,33 @@ router.delete('/songs/:id', async (req, res, next) => {
     }
     next();
 });
+
+// ~~~ TODAYS SONG ROUTES ~~~
+
+router.get('/todayssong', async (req, res, next) => {
+    try {
+        const data = await getTodaysSong();
+        res.json({success: true, payload: data});
+    } catch (error) {
+        res.status(403);
+        res.json({message: 'error occurred during todays song request', payload: error});
+    }
+    next();
+});
+
+// ~~~ USED SONGS ROUTES ~~~ 
+
+router.get('/usedsongs', async (req, res, next) => {
+    try {
+        const data = await getAllUsedSongs();
+        res.json({success: true, payload: data});
+    } catch (error) {
+        res.status(403);
+        res.json({message: 'error occurred during all used songs request', payload: error});
+    }
+    next();
+});
+
+
 
 export default router;
