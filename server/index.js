@@ -2,8 +2,8 @@ import express from 'express';
 import cors from 'cors';
 import useRouter from '../routes/routes.js';
 const app = express();
-// const PORT = process.env.PORT || 3001;
-const PORT = 3001;
+const PORT = process.env.PORT || 3001;
+// const PORT = 3001;
 
 app.use(cors());
 

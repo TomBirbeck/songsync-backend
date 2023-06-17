@@ -47,6 +47,7 @@ export const getTodaysSong = async () => {
 
 export const addTodaysSong = async (song) => {
     const res = await pool.query('INSERT INTO todays_song (id, name, artist, lyrics) VALUES (($1), ($2), ($3), ($4)) RETURNING * ;', [song[0].id, song[0].name, song[0].artist, song[0].lyrics])
+    console.log(res.rows)
     return res.rows;
 }
 
@@ -107,18 +108,19 @@ const job = scheduleJob(rule, async function(){
     let id = randomNum(1, await getSongCount());
     let songAlreadyUsed = await checkSong(id);
     while (!songAlreadyUsed){
+        console.log("while ran", id, songAlreadyUsed)
      id = randomNum(1, await getSongCount());
      songAlreadyUsed = await checkSong(id);
     }
-     updateSong(id);
+     await updateSong(id);
    });
 
-// const jobThree = scheduleJob('40 * * * *', async function(){
-//    let id = randomNum(1, await getSongCount());
-//    let songAlreadyUsed = await checkSong(id);
+// const jobThree = scheduleJob('32 * * * *', async function(){
+//     let id = randomNum(1, await getSongCount());
+//     let songAlreadyUsed = await checkSong(id);
 //    while (!songAlreadyUsed){
 //     id = randomNum(1, await getSongCount());
 //     songAlreadyUsed = await checkSong(id);
 //    }
-//     updateSong(id);
+//     await updateSong(id);
 //   });
