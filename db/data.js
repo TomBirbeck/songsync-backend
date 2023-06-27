@@ -143,7 +143,7 @@ const songList = [
       },
       {
         artist: 'Lewis Capaldi',
-        song: 'Somebody to Love',
+        song: 'Someone you Loved',
         lyrics: `I'm going under and this time I fear there's no one to save me,
                   This all or nothing really got a way of driving me crazy,
                   I need somebody to heal,
@@ -190,6 +190,196 @@ const songList = [
                   We are the children,
                   The last generation, 
                   We are the ones they left behind,`
+      },
+      {
+        artist: 'Elton John',
+        song: `Rocket Man`,
+        lyrics: `She packed my bags last night pre-flight,
+                  Zero hour nine AM,
+                  And I'm gonna be high as a kite by then,
+                  I miss the earth so much I miss my wife,
+                  It's lonely out in space,
+                  On such a timeless flight,`
+      },
+      {
+        artist: 'Billy Joel',
+        song: `Always a Woman`,
+        lyrics: `She can kill with a smile,
+                  she can wound with her eyes,
+                  She can ruin your faith with her casual lies,
+                  And she only reveals what she wants you to see,
+                  She hides like a child,
+                  but she's always a woman to me,`
+      },
+      {
+        artist: 'Prince',
+        song: `Little Red Corvette`,
+        lyrics: `I guess I should of known,
+                  By the way you parked your car sideways,
+                  That it wouldn't last,
+                  See you're the kinda person,
+                  That believes in makin' out once,
+                  Love 'em and leave 'em fast,`
+      },
+      {
+        artist: 'The Monkees',
+        song: `Daydream Believer`,
+        lyrics: `Oh I could hide 'neath the wings,
+                  Of the bluebird as she sings,
+                  The six-o'clock alarm would never ring,
+                  But six rings and I rise,
+                  Wipe the sleep out of my eyes,
+                  The shaving razor's cold and it stings,`
+      },
+      {
+        artist: 'The Streets',
+        song: `Dry Your Eyes`,
+        lyrics: `And I'm just standin' there,
+                    I can't say a word,
+                    'Cause everything's just gone,
+                    I've got nothin' absolutely nothin',
+                    In one single moment your whole life can turn 'round,
+                    I stand there for a minute starin' straight into the ground,`
+      },
+      {
+        artist: 'Kate Bush',
+        song: `Wuthering Heights`,
+        lyrics: `Out on the wiley windy moors,
+                  We'd roll and fall in green,
+                  You had a temper like my jealousy,
+                  Too hot too greedy,
+                  How could you leave me,
+                  When I needed to possess you?,`
+      },
+      {
+        artist: 'Muse',
+        song: `Supermassive Black Hole`,
+        lyrics: `Oh baby don't you know I suffer?,
+                  Oh baby can you hear me moan?,
+                  You caught me under false pretenses,
+                  How long before you let me go?,
+                  Ooh you set my soul alight,
+                  Ooh you set my soul alight,`
+      },
+      {
+        artist: 'Mark Morrison',
+        song: `Return of the Mack`,
+        lyrics: `Oooooh…,
+                  Come on,
+                  Ooh yeah,
+                  Well I tried to tell you so,
+                  (Yes I did),
+                  But I guess you didn't know,`
+      },
+      {
+        artist: 'Sia',
+        song: `Chandelier`,
+        lyrics: `Party girls don't get hurt,
+                  Can't feel anything,
+                  when will I learn,
+                  I push it down,
+                  push it down,
+                  I'm the one "for a good time call"`
+      },
+      {
+        artist: 'Black Sabbath',
+        song: `War Pigs`,
+        lyrics: `Generals gathered in their masses,
+                  Just like witches at black masses,
+                  Evil minds that plot destruction,
+                  Sorcerer of death's construction,
+                  In the fields the bodies burning,
+                  As the war machine keeps turning,`
+      },
+      {
+        artist: 'Rage Against The Machine',
+        song: `Sleep Now in the Fire`,
+        lyrics: `The world is my expense,
+                  The cost of my desire,
+                  Jesus blessed me with its future,
+                  And I protect it with fire,
+                  So raise your fists,
+                  And march around,`
+      },
+      {
+        artist: 'Ariana Grande',
+        song: `7 Rings`,
+        lyrics: `Yeah breakfast at Tiffany's and bottles of bubbles,
+                  Girls with tattoos who like getting in trouble,
+                  Lashes and diamonds ATM machines,
+                  Buy myself all of my favorite things (Yeah),
+                  Been through some bad shit I should be a sad bitch,
+                  Who woulda thought it'd turn me to a savage?,`
+      },
+      {
+        artist: 'Joe Walsh',
+        song: `Rocky Mountain Way`,
+        lyrics: `Spent the last year,
+                  Rocky Mountain Way,
+                  Couldn't get much higher,
+                  Out to pasture,
+                  Think it's safe to say,
+                  Time to open fire,`
+      },
+      {
+        artist: 'Rainbow',
+        song: `Since You've Been Gone`,
+        lyrics: `I get the same old dream,
+                    same time every night,
+                    Fall to the ground and I wake up,
+                    So I get out of bed put on my shoes and in my head,
+                    Thoughts fly back to the break-up,
+                    These four walls are closing in,`
+      },
+      {
+        artist: 'Alice Cooper',
+        song: `Poison`,
+        lyrics: `Your cruel device,
+                    Your blood like ice,
+                    One look could kill,
+                    My pain your thrill,
+                    I wanna love you but I better not touch (don't touch),
+                    I wanna hold you but my senses tell me to stop,`
+      },
+      {
+        artist: 'ABBA',
+        song: `S.O.S`,
+        lyrics: `Where are those happy days,
+                  they seem so hard to find,
+                  I tried to reach for you,
+                  but you have closed your mind,
+                  Whatever happened to our love?,
+                  I wish I understood,`
+      },
+      {
+        artist: 'Michael Jackson',
+        song: `Billie Jean`,
+        lyrics: `She was more like a beauty queen from a movie scene,
+                  I said don't mind but what do you mean I am the one,
+                  Who will dance on the floor in the round,
+                  She said I am the one who will dance on the floor in the round,
+                  She told me her name was Billie Jean as she caused a scene,
+                  Then every head turned with eyes that dreamed of being the one,`
+      },
+      {
+        artist: 'Aretha Franklin',
+        song: `Respect`,
+        lyrics: `What you want,
+                  Baby I got it,
+                  What you need,
+                  Do you know I got it,
+                  All I'm askin',
+                  Is for a little respect when you get home (just a little bit),`
+      },
+      {
+        artist: 'Dusty Springfield',
+        song: `Son of a Preacher Man`,
+        lyrics: `Today I went out on a movie call,
+                  I saw a million nervous faces,
+                  I knew them all,
+                  Hollywood movie girls,
+                  We're all wearing our one good interview dress,
+                  The one showin' our legs,`
       },
     ]
 

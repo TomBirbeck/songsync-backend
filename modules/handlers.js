@@ -124,7 +124,7 @@ const job = scheduleJob(rule, async function(){
     await updateSong(id);
    });
 
-// const jobThree = scheduleJob('36 * * * *', async function(){
+// const jobThree = scheduleJob('27 * * * *', async function(){
 //     const usedSongCount = await getAllUsedSongsCount();
 //     const songCount = await getSongCount();
 //     let id = randomNum(1, songCount);
