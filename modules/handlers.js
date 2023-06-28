@@ -1,5 +1,5 @@
 import pool from '../db/index.js'
-import { scheduleJob, RecurrenceRule } from 'node-schedule';
+// import { scheduleJob, RecurrenceRule } from 'node-schedule';
 
 // ~~~ SONGS TABLE ~~~
 
@@ -97,18 +97,14 @@ const updateSong = async (id) => {
     const song =  await getSongById(id);
     const today = await addTodaysSong(song);
     const used = await addUsedSong(song);
+    // console.log(song, today, used)
 }
 
 const randomNum = (min, max) =>  {
 return Math.floor(Math.random() * (max - min + 1)) + min
 }
 
-const rule = new RecurrenceRule();
-rule.hour = 0;
-rule.minute = 0;
-rule.tz = 'Etc/UTC';
-
-const job = scheduleJob(rule, async function(){
+export const getNewDailySong = async () => {
     const usedSongCount = await getAllUsedSongsCount();
     const songCount = await getSongCount();
     let id = randomNum(1, songCount);
@@ -122,9 +118,15 @@ const job = scheduleJob(rule, async function(){
        }
     }
     await updateSong(id);
-   });
+    return id;
+}
 
-// const jobThree = scheduleJob('27 * * * *', async function(){
+// const rule = new RecurrenceRule();
+// rule.hour = 0;
+// rule.minute = 0;
+// rule.tz = 'Etc/UTC';
+
+// const job = scheduleJob(rule, async function(){
 //     const usedSongCount = await getAllUsedSongsCount();
 //     const songCount = await getSongCount();
 //     let id = randomNum(1, songCount);
@@ -138,4 +140,21 @@ const job = scheduleJob(rule, async function(){
 //        }
 //     }
 //     await updateSong(id);
+//    });
+
+// const jobThree = scheduleJob('06 * * * *', async function(){
+//     const usedSongCount = await getAllUsedSongsCount();
+//     const songCount = await getSongCount();
+//     let id = randomNum(1, songCount);
+//     if (usedSongCount === songCount) {
+//         await deleteAllUsedSongs();
+//     } else {
+//         let songAlreadyUsed = await checkSong(id);
+//        while (!songAlreadyUsed){
+//         id = randomNum(1, songCount);
+//         songAlreadyUsed = await checkSong(id);
+//        }
+//     }
+//     await updateSong(id);
+//     console.log(usedSongCount, songCount, id)
 //   });

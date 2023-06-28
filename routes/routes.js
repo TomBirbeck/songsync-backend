@@ -1,5 +1,5 @@
 import express from 'express';
-import { addSong, deleteSong, editSong, getAllSongs, getAllUsedSongs, getSongById, getTodaysSong } from '../modules/handlers.js';
+import { addSong, deleteSong, editSong, getAllSongs, getAllUsedSongs, getNewDailySong, getSongById, getTodaysSong } from '../modules/handlers.js';
 const router = express.Router();
 
 // ~~~ SONGS TABLE ROUTES ~~~
@@ -96,6 +96,18 @@ router.get('/usedsongs', async (req, res, next) => {
     }
     next();
 });
+
+// ~~~ SET DAILY SONG ~~~  
+
+router.post('/setdailysong', async (req, res, next) => {
+    try {
+        const data = await getNewDailySong();
+        res.json({success: true, payload: data});
+    } catch (error) {
+        res.status(403);
+        res.json({message: 'error occured when trying to set new daily song', payload: error});
+    }
+})
 
 
 
