@@ -142,7 +142,7 @@ export const getNewDailySong = async () => {
 //     await updateSong(id);
 //    });
 
-// const jobThree = scheduleJob('06 * * * *', async function(){
+// const jobThree = scheduleJob('09 * * * *', async function(){
 //     const usedSongCount = await getAllUsedSongsCount();
 //     const songCount = await getSongCount();
 //     let id = randomNum(1, songCount);
