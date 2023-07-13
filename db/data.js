@@ -8,7 +8,7 @@ const songList = [
       //   There stood a log cabin made of earth and wood,
       //   Where lived a country boy named Johnny B. Goode,
       //   Who never ever learned to read or write so well,
-      //   But he could play the guitar just a-ringin' a bell,`
+      //   But he could play the guitar just a-ringin' a bell`
       // },
       // {
       //   artist: 'Spice Girls',
@@ -18,7 +18,7 @@ const songList = [
       //           So tell me what you want,
       //           what you really really want,
       //           I'll tell you what I want, 
-      //           what I really really want,`
+      //           what I really really want`
       // },
       // {
       //   artist: 'Queen',
@@ -28,7 +28,7 @@ const songList = [
       //   gonna be a big man someday,
       //   You got mud on your face,
       //   you big disgrace,
-      //   Kicking your can all over the place singin',`
+      //   Kicking your can all over the place singin'`
       // },
       // {
       //   artist: 'Taylor Swift',
@@ -38,7 +38,7 @@ const songList = [
       //   That's what people say mm-mm,
       //   That's what people say mm-mm,
       //   I go on too many dates,
-      //   But I can't make 'em stay,`
+      //   But I can't make 'em stay`
       // },
       // {
       //   artist: 'Carly Rae Jepsen',
@@ -48,17 +48,17 @@ const songList = [
       //   I looked to you as it fell,
       //   And now you're in my way,
       //   I trade my soul for a wish,
-      //   Pennies and dimes for a kiss,`
+      //   Pennies and dimes for a kiss`
       // },
       // {
       //   artist: 'Vanilla Ice',
-      //   song: `Rollin' in my 5.0`,
+      //   song: `Rollin in my 5.0`,
       //   lyrics: `Turn up the volume,
       //           crank up the bass,
       //           Aww yeah Vanilla Ice is in the place,
       //           I'm here to tell ya a little story 'bout my 5.0,
       //           Just a-lettin' ya know I'm in total control,
-      //           Oh yes many people know that I got good taste,`
+      //           Oh yes many people know that I got good taste`
       // },
       // {
       //   artist: 'Backstreet Boys',
@@ -68,7 +68,7 @@ const songList = [
       //           The one desire,
       //           Believe when I say,
       //           I want it that way,
-      //           But we are two worlds apart,`
+      //           But we are two worlds apart`
       // },
       // {
       //   artist: 'Scissor Sisters',
@@ -78,7 +78,7 @@ const songList = [
       //           And your mama takes a shine to her best son,
       //           Something different,
       //           all the girls they seem to like you,
-      //           Cause you're handsome,`
+      //           Cause you're handsome`
       // },
       // {
       //   artist: 'Johnny Cash',
@@ -88,7 +88,7 @@ const songList = [
       //             Bound by wild desire,
       //             I fell into a ring of fire,
       //             I fell into a burnin' ring of fire,
-      //             I went down down down,`
+      //             I went down down down`
       // },
       // {
       //   artist: 'David Bowie',
@@ -98,7 +98,7 @@ const songList = [
       //             Doo doo doo-doo doo doo doo doo,
       //             You've got your mother in a whirl,
       //             She's not sure if you're a boy or a girl,
-      //             Hey babe your hair's alright,`
+      //             Hey babe your hair's alright`
       // },
       // {
       //   artist: 'Twister Sister',
@@ -108,7 +108,7 @@ const songList = [
       //             Oh we're not gonna take it anymore,
       //             We've got the right to choose it,
       //             There ain't no way we'll lost it,
-      //             This is our life this is our song,`
+      //             This is our life this is our song`
       // },
       // {
       //   artist: 'Olivia Rodrigo',
@@ -118,8 +118,7 @@ const songList = [
       //             'Cause you were so excited for me,
       //             To finally drive up to your house,
       //             But today I drove through the suburbs,
-      //             Crying 'cause you weren't around,
-      //   `
+      //             Crying 'cause you weren't around,`
       // },
       // {
       //   artist: 'The Doors',
@@ -128,8 +127,8 @@ const songList = [
       //             You know that I would be a liar,
       //             If I was to say to you,
       //             Girl we couldn't get much higher,
-      //             Come on baby, light my fire,
-      //             Come on baby, light my fire,`
+      //             Come on baby light my fire,
+      //             Come on baby light my fire`
       // },
       // {
       //   artist: 'Eminem ft Beyonce',
@@ -139,7 +138,7 @@ const songList = [
       //             I walk on water,
       //             But only when it freezes,
       //             Why are expectations so high?,
-      //             Is it the bar I set?,`
+      //             Is it the bar I set?`
       // },
       // {
       //   artist: 'Lewis Capaldi',
@@ -149,7 +148,7 @@ const songList = [
       //             I need somebody to heal,
       //             Somebody to know,
       //             Somebody to have,
-      //             Somebody to hold,`
+      //             Somebody to hold`
       // },
       // {
       //   artist: 'The Libertines',
@@ -159,7 +158,7 @@ const songList = [
       //             Your light fingers threw the dark,
       //             That shattered the lamp and into darkness it cast us,  
       //             No you've got it the wrong way round,
-      //             You shut me up and blamed it on the brown,`
+      //             You shut me up and blamed it on the brown`
       // },
       // {
       //   artist: 'Arctic Monkeys',
@@ -169,7 +168,7 @@ const songList = [
       //             That sticks around like something's in your teeth,
       //             And some aces up your sleeve,
       //             I had no idea that you're in deep,
-      //             I dreamt about you near me every night this week,`
+      //             I dreamt about you near me every night this week`
       // },
       // {
       //   artist: 'Bonnie Tyler',
@@ -179,7 +178,7 @@ const songList = [
       //             Where's the streetwise Hercules to fight the rising odds?,
       //             Isn't there a white knight upon a fiery steed?,
       //             Late at night I toss and I turn,
-      //             And I dream of what I need,`
+      //             And I dream of what I need`
       // },
       // {
       //   artist: 'Tina Turner',
@@ -189,7 +188,7 @@ const songList = [
       //             Can't make the same mistake this time, 
       //             We are the children,
       //             The last generation, 
-      //             We are the ones they left behind,`
+      //             We are the ones they left behind`
       // },
       // {
       //   artist: 'Elton John',
@@ -199,7 +198,7 @@ const songList = [
       //             And I'm gonna be high as a kite by then,
       //             I miss the earth so much I miss my wife,
       //             It's lonely out in space,
-      //             On such a timeless flight,`
+      //             On such a timeless flight`
       // },
       // {
       //   artist: 'Billy Joel',
@@ -209,7 +208,7 @@ const songList = [
       //             She can ruin your faith with her casual lies,
       //             And she only reveals what she wants you to see,
       //             She hides like a child,
-      //             but she's always a woman to me,`
+      //             but she's always a woman to me`
       // },
       // {
       //   artist: 'Prince',
@@ -219,7 +218,7 @@ const songList = [
       //             That it wouldn't last,
       //             See you're the kinda person,
       //             That believes in makin' out once,
-      //             Love 'em and leave 'em fast,`
+      //             Love 'em and leave 'em fast`
       // },
       // {
       //   artist: 'The Monkees',
@@ -229,7 +228,7 @@ const songList = [
       //             The six-o'clock alarm would never ring,
       //             But six rings and I rise,
       //             Wipe the sleep out of my eyes,
-      //             The shaving razor's cold and it stings,`
+      //             The shaving razor's cold and it stings`
       // },
       // {
       //   artist: 'The Streets',
@@ -239,7 +238,7 @@ const songList = [
       //               'Cause everything's just gone,
       //               I've got nothin' absolutely nothin',
       //               In one single moment your whole life can turn 'round,
-      //               I stand there for a minute starin' straight into the ground,`
+      //               I stand there for a minute starin' straight into the ground`
       // },
       // {
       //   artist: 'Kate Bush',
@@ -249,7 +248,7 @@ const songList = [
       //             You had a temper like my jealousy,
       //             Too hot too greedy,
       //             How could you leave me,
-      //             When I needed to possess you?,`
+      //             When I needed to possess you?`
       // },
       // {
       //   artist: 'Muse',
@@ -259,7 +258,7 @@ const songList = [
       //             You caught me under false pretenses,
       //             How long before you let me go?,
       //             Ooh you set my soul alight,
-      //             Ooh you set my soul alight,`
+      //             Ooh you set my soul alight`
       // },
       // {
       //   artist: 'Mark Morrison',
@@ -269,7 +268,7 @@ const songList = [
       //             Ooh yeah,
       //             Well I tried to tell you so,
       //             (Yes I did),
-      //             But I guess you didn't know,`
+      //             But I guess you didn't know`
       // },
       // {
       //   artist: 'Sia',
@@ -289,7 +288,7 @@ const songList = [
       //             Evil minds that plot destruction,
       //             Sorcerer of death's construction,
       //             In the fields the bodies burning,
-      //             As the war machine keeps turning,`
+      //             As the war machine keeps turning`
       // },
       // {
       //   artist: 'Rage Against The Machine',
@@ -299,7 +298,7 @@ const songList = [
       //             Jesus blessed me with its future,
       //             And I protect it with fire,
       //             So raise your fists,
-      //             And march around,`
+      //             And march around`
       // },
       // {
       //   artist: 'Ariana Grande',
@@ -309,7 +308,7 @@ const songList = [
       //             Lashes and diamonds ATM machines,
       //             Buy myself all of my favorite things (Yeah),
       //             Been through some bad shit I should be a sad bitch,
-      //             Who woulda thought it'd turn me to a savage?,`
+      //             Who woulda thought it'd turn me to a savage?`
       // },
       // {
       //   artist: 'Joe Walsh',
@@ -319,7 +318,7 @@ const songList = [
       //             Couldn't get much higher,
       //             Out to pasture,
       //             Think it's safe to say,
-      //             Time to open fire,`
+      //             Time to open fire`
       // },
       // {
       //   artist: 'Rainbow',
@@ -329,7 +328,7 @@ const songList = [
       //               Fall to the ground and I wake up,
       //               So I get out of bed put on my shoes and in my head,
       //               Thoughts fly back to the break-up,
-      //               These four walls are closing in,`
+      //               These four walls are closing in`
       // },
       // {
       //   artist: 'Alice Cooper',
@@ -339,7 +338,7 @@ const songList = [
       //               One look could kill,
       //               My pain your thrill,
       //               I wanna love you but I better not touch (don't touch),
-      //               I wanna hold you but my senses tell me to stop,`
+      //               I wanna hold you but my senses tell me to stop`
       // },
       // {
       //   artist: 'ABBA',
@@ -349,7 +348,7 @@ const songList = [
       //             I tried to reach for you,
       //             but you have closed your mind,
       //             Whatever happened to our love?,
-      //             I wish I understood,`
+      //             I wish I understood`
       // },
       // {
       //   artist: 'Michael Jackson',
@@ -359,7 +358,7 @@ const songList = [
       //             Who will dance on the floor in the round,
       //             She said I am the one who will dance on the floor in the round,
       //             She told me her name was Billie Jean as she caused a scene,
-      //             Then every head turned with eyes that dreamed of being the one,`
+      //             Then every head turned with eyes that dreamed of being the one`
       // },
       // {
       //   artist: 'Aretha Franklin',
@@ -369,7 +368,7 @@ const songList = [
       //             What you need,
       //             Do you know I got it,
       //             All I'm askin',
-      //             Is for a little respect when you get home (just a little bit),`
+      //             Is for a little respect when you get home (just a little bit)`
       // },
       // {
       //   artist: 'Dusty Springfield',
@@ -379,7 +378,7 @@ const songList = [
       //             I knew them all,
       //             Hollywood movie girls,
       //             We're all wearing our one good interview dress,
-      //             The one showin' our legs,`
+      //             The one showin' our legs`
       // },
       // {
       //   artist: 'Tina Turner',
@@ -389,7 +388,7 @@ const songList = [
       //             Oh you come to me give me everything I need,
       //             Give me a life time of promises and a world of dreams,
       //             Speak the language of love like you know what it means,
-      //             Mm and it can't be wrong take my heart and make it strong babe,`,
+      //             Mm and it can't be wrong take my heart and make it strong babe`,
       // },
       // {
       //   artist: 'Gloria Gaynor',
@@ -399,7 +398,7 @@ const songList = [
       //             But then I spent so many nights thinking how you did me wrong,
       //             And I grew strong,
       //             And I learned how to get along,
-      //             And so you're back,`,
+      //             And so you're back`,
       // },
       // {
       //   artist: 'Survivor',
@@ -409,7 +408,7 @@ const songList = [
       //             Went the distance now I'm back on my feet,
       //             Just a man and his will to survive,
       //             So many times it happens too fast,
-      //             You trade your passion for glory,`,
+      //             You trade your passion for glory`,
       // },
       // {
       //   artist: 'Vanessa Carlton',
@@ -419,7 +418,7 @@ const songList = [
       //             Staring blankly ahead just making my way,
       //             Making a way through the crowd,
       //             And I need you,
-      //             And I miss you,`,
+      //             And I miss you`,
       // },
       // {
       //   artist: 'The Who',
@@ -429,7 +428,7 @@ const songList = [
       //             To be the sad man,
       //             Behind blue eyes,
       //             No one knows what it's like,
-      //             To be hated,`,
+      //             To be hated`,
       // },
       // {
       //   artist: 'The Animals',
@@ -439,7 +438,7 @@ const songList = [
       //             And it's been the ruin of many a poor boy,
       //             And God I know I'm one,
       //             My mother was a tailor,
-      //             She sewed my new blue jeans,`,
+      //             She sewed my new blue jeans`,
       // },
       // {
       //   artist: 'MeatLoaf',
@@ -449,7 +448,7 @@ const songList = [
       //             There's a man in the shadows with a gun in his eye,
       //             And a blade shining oh so bright,
       //             There's evil in the air and there's thunder in sky,
-      //             And a killer's on the bloodshot streets,`,
+      //             And a killer's on the bloodshot streets`,
       // },
       // {
       //   artist: 'The Rolling Stones',
@@ -459,7 +458,7 @@ const songList = [
       //             You can start me up,
       //             You can start me up I'll never stop,
       //             I've been running hot,
-      //             You got me ticking going to blow my top,`,
+      //             You got me ticking going to blow my top`,
       // },
       // {
       //   artist: 'The Rolling Stones',
@@ -469,7 +468,7 @@ const songList = [
       //             I see the girls walk by dressed in their summer clothes,
       //             I have to turn my head until my darkness goes,
       //             I see a line of cars and they're all painted black,
-      //             With flowers and my love both never to come back,`,
+      //             With flowers and my love both never to come back`,
       // },
       // {
       //   artist: 'Solomon Burke',
@@ -479,7 +478,7 @@ const songList = [
       //   Doncha feel like crying,
       //   Doncha feel like crying ,
       //   Well here I am my honey,
-      //   c'mon baby cry to me,`,
+      //   c'mon baby cry to me`,
       // },
       // {
       //   artist: 'Sam Cooke',
@@ -489,7 +488,7 @@ const songList = [
       //             Don't know much about a science book,
       //             Don't know much about the french I took,
       //             But I do know that I love you,
-      //             And I know that if you love me too,`,
+      //             And I know that if you love me too`,
       // },
       // {
       //   artist: 'Dion',
@@ -499,7 +498,7 @@ const songList = [
       //             She took my love then ran around,
       //             With every single guy in town,
       //             Yeah I should have known it from the very start,
-      //             This girl will leave me with a broken heart,`,
+      //             This girl will leave me with a broken heart`,
       // },
       // {
       //   artist: 'Fats Domino',
@@ -509,7 +508,7 @@ const songList = [
       //             I'm sick and tired of foolin' around with you,
       //             Wake up in the mornin' fix you somethin' to eat,
       //             'fore I go to work I even brush your teeth,
-      //             Get home in the evenin' and you're still in bed,`,
+      //             Get home in the evenin' and you're still in bed`,
       // },
       // {
       //   artist: 'Dean Martin',
@@ -519,7 +518,7 @@ const songList = [
       //             When the world seems to shine like you've had too much wine,
       //             That's amore,
       //             Bells will ring ting-a-ling-a-ling, ting-a-ling-a-ling,
-      //             And you'll sing Vita bella,`,
+      //             And you'll sing Vita bella`,
       // },
       // {
       //   artist: 'Buddy Holly & The Crickets',
@@ -529,7 +528,7 @@ const songList = [
       //             My Peggy Sue,
       //             Oh well I love you gal, 
       //             yes I love you Peggy Sue,
-      //             Peggy Sue Peggy Sue,`,
+      //             Peggy Sue Peggy Sue`,
       // },
       // {
       //   artist: 'Little Richard',
@@ -549,7 +548,7 @@ const songList = [
       //             And why does my appearance seem to have a somber tone,
       //             Well there's a reason for the things that I have on,
       //             I wear the black for the poor and the beaten down,
-      //             Livin' in the hopeless hungry side of town,`,
+      //             Livin' in the hopeless hungry side of town`,
       // },
       // {
       //   artist: 'Johnny Cash',
@@ -559,7 +558,7 @@ const songList = [
       //             Except this old guitar and an empty bottle of booze,
       //             Now I don't blame him 'cause he run and hid,
       //             But the meanest thing that my daddy ever did,
-      //             Was before he left he went and named me Sue,`,
+      //             Was before he left he went and named me Sue`,
       // },
       // {
       //   artist: 'Franki Lymon & the Teenagers',
@@ -569,7 +568,7 @@ const songList = [
       //             Why do birds sing so gay?,
       //             And lovers await the break of day,
       //             Why do they fall in love?,
-      //             Why does the rain fall from above?,`,
+      //             Why does the rain fall from above?`,
       // },
       // {
       //   artist: 'The Mamas & The Papas',
@@ -579,7 +578,7 @@ const songList = [
       //             I've been for a walk (I've been for a walk),
       //             On a winter's day (on a winter's day),
       //             I'd be safe and warm (I'd be safe and warm),
-      //             If I was in L.A. (if I was in L.A.),`,
+      //             If I was in L.A. (if I was in L.A.)`,
       // },
       // {
       //   artist: 'Eagles',
@@ -589,7 +588,7 @@ const songList = [
       //             Warm smell of colitas, 
       //             rising up through the air,
       //             Up ahead in the distance, 
-      //             I saw a shimmering light,`,
+      //             I saw a shimmering light`,
       // },
       // {
       //   artist: 'Led Zeppelin',
@@ -599,7 +598,7 @@ const songList = [
       //   And she's buying a stairway to heaven,
       //   When she gets there she knows,
       //   If the stores are all closed,
-      //   With a word she can get what she came for,`,
+      //   With a word she can get what she came for`,
       // },
       // {
       //   artist: 'Led Zeppelin',
@@ -609,7 +608,7 @@ const songList = [
       //             Lots of people talk and few of them know,
       //             Soul of a woman was created below yeah,
       //             You hurt and abused tellin' all of your lies,
-      //             Run around sweet baby, Lord how they hypnotize,`,
+      //             Run around sweet baby, Lord how they hypnotize`,
       // },
       // {
       //   artist: 'Rick Astley',
@@ -619,7 +618,7 @@ const songList = [
       //             A full commitment's what I'm thinking of,
       //             You wouldn't get this from any other guy,
       //             I just want to tell you how I'm feeling,
-      //             Gotta make you understand,`,
+      //             Gotta make you understand`,
       // },
       // {
       //   artist: 'Leo Sayer',
@@ -629,7 +628,7 @@ const songList = [
       //   And there you are with the love light in your eyes,
       //   The bridges are burnt down,
       //   your arms are open wide,
-      //   Am I in too deep or should I swim to the shore?,`,
+      //   Am I in too deep or should I swim to the shore?`,
       // },
       // {
       //   artist: 'Leo Sayer',
@@ -639,7 +638,7 @@ const songList = [
       //   She gives him French kisses,
       //   He gives her French cigarettes,
       //   They sit at the same table every time,
-      //   The lights are low but their eyes shine,`,
+      //   The lights are low but their eyes shine`,
       // },
       // {
       //   artist: 'Meatloaf & Ellen Foley',
@@ -649,7 +648,7 @@ const songList = [
       //   Parking by the lake,
       //   And there was not another car in sight,
       //   And I never had a girl,
-      //   Looking any better than you did,`,
+      //   Looking any better than you did`,
       // },
       // {
       //   artist: 'Billie Eilish',
@@ -659,7 +658,7 @@ const songList = [
       //             Wait 'til the world is mine,
       //             Visions I vandalize,
       //             Cold in my kingdom size,
-      //             Fell for these ocean eyes,`,
+      //             Fell for these ocean eyes`,
       // },
       // {
       //   artist: 'Rupert Holmes',
@@ -669,7 +668,7 @@ const songList = [
       //   Like a worn out recording,
       //   Of a favorite song,
       //   So while she lay there sleeping,
-      //   I read the paper in bed,`,
+      //   I read the paper in bed`,
       // },
       // {
       //   artist: 'Alanis Morrissette',
@@ -679,7 +678,7 @@ const songList = [
       //             It's a black fly in your Chardonnay,
       //             It's a death row pardon two minutes too late,
       //             Isn't it ironic don't you think,
-      //             It's like rain on your wedding day,`,
+      //             It's like rain on your wedding day`,
       // },
       // {
       //   artist: 'The Beach Boys',
@@ -689,7 +688,7 @@ const songList = [
       //             I hear the sound of a gentle word,
       //             On the wind that lifts her perfume through the air,
       //             I'm pickin' up good vibrations,
-      //             She's giving me excitations,`,
+      //             She's giving me excitations`,
       // },
       // {
       //   artist: 'The Prodigy',
@@ -699,7 +698,7 @@ const songList = [
       //             I'm the fear addicted,
       //             danger illustrated,
       //             I'm a firestarter,
-      //             twisted firestarter,`,
+      //             twisted firestarter`,
       // },
       // {
       //   artist: 'The Kinks',
@@ -709,7 +708,7 @@ const songList = [
       //   Yeah, you really got me now,
       //   You got me so I can't sleep at night,
       //   Yeah, you really got me now,
-      //   You got me so I don't know what I'm doin' now,`,
+      //   You got me so I don't know what I'm doin' now`,
       // },
       // {
       //   artist: 'Aerosmith',
@@ -719,7 +718,7 @@ const songList = [
       //             The past is gone,
       //             It went by, like dusk to dawn,
       //             Isn't that the way,
-      //             Everybody's got the dues in life to pay,`,
+      //             Everybody's got the dues in life to pay`,
       // },
       // {
       //   artist: 'Bon Jovi',
@@ -739,7 +738,7 @@ const songList = [
       //             And it feels like home,
       //             When you call my name it's like a little prayer,
       //             I'm down on my knees I wanna take you there,
-      //             In the midnight hour I can feel your power,`,
+      //             In the midnight hour I can feel your power`,
       // },
       // {
       //   artist: 'The Beatles',
@@ -749,7 +748,7 @@ const songList = [
       //               When I say that somethin',
       //               I want to hold your hand,
       //               I want to hold your hand,
-      //               I want to hold your hand,`,
+      //               I want to hold your hand`,
       // },
       // {
       //   artist: 'Simon & Garfunkel',
@@ -759,7 +758,7 @@ const songList = [
       //             Because a vision softly creeping,
       //             Left its seeds while I was sleeping,
       //             And the vision that was planted in my brain,
-      //             Still remains,`,
+      //             Still remains`,
       // },
       // {
       //   artist: 'Simon & Garfunkel',
@@ -769,7 +768,7 @@ const songList = [
       //               I will dry them all,
       //               I'm on your side,
       //               Oh when times get rough,
-      //               And friends just can't be found,`,
+      //               And friends just can't be found`,
       // },
       // {
       //   artist: 'Pulp',
@@ -779,7 +778,7 @@ const songList = [
       //               That's where I,
       //               Caught her eye,
       //               She told me that her Dad was loaded,
-      //               I said In that case I'll have a rum and coca-cola,`,
+      //               I said In that case I'll have a rum and coca-cola`,
       // },
     ]
 
