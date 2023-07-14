@@ -1,4 +1,86 @@
 const songList = [
+  // ~~~ A ~~~
+    // {
+      //   artist: 'The Animals',
+      //   song: `The House of the Rising Sun`,
+      //   lyrics: `There is a house in New Orleans,
+      //             They call the Rising Sun,
+      //             And it's been the ruin of many a poor boy,
+      //             And God I know I'm one,
+      //             My mother was a tailor,
+      //             She sewed my new blue jeans`,
+      // },
+     // {
+      //   artist: 'Alanis Morrissette',
+      //   song: `Ironic`,
+      //   lyrics: `An old man turned ninety-eight,
+      //             He won the lottery and died the next day,
+      //             It's a black fly in your Chardonnay,
+      //             It's a death row pardon two minutes too late,
+      //             Isn't it ironic don't you think,
+      //             It's like rain on your wedding day`,
+      // },
+   // {
+      //   artist: 'Aretha Franklin',
+      //   song: `Respect`,
+      //   lyrics: `What you want,
+      //             Baby I got it,
+      //             What you need,
+      //             Do you know I got it,
+      //             All I'm askin',
+      //             Is for a little respect when you get home (just a little bit)`
+      // },
+    // {
+      //   artist: 'Arctic Monkeys',
+      //   song: 'Do I Wanna Know?',
+      //   lyrics: `Have you got color in your cheeks,
+      //             Do you ever get the feeling that you can't shift the tide,
+      //             That sticks around like something's in your teeth,
+      //             And some aces up your sleeve,
+      //             I had no idea that you're in deep,
+      //             I dreamt about you near me every night this week`
+      // },
+      // / {
+        //   artist: 'Ariana Grande',
+        //   song: `7 Rings`,
+        //   lyrics: `Yeah breakfast at Tiffany's and bottles of bubbles,
+        //             Girls with tattoos who like getting in trouble,
+        //             Lashes and diamonds ATM machines,
+        //             Buy myself all of my favorite things (Yeah),
+        //             Been through some bad sh*t I should be a sad bi*ch,
+        //             Who woulda thought it'd turn me to a savage?`
+        // },
+        // {
+      //   artist: 'Alice Cooper',
+      //   song: `Poison`,
+      //   lyrics: `Your cruel device,
+      //               Your blood like ice,
+      //               One look could kill,
+      //               My pain your thrill,
+      //               I wanna love you but I better not touch (don't touch),
+      //               I wanna hold you but my senses tell me to stop`
+      // },
+      // {
+      //   artist: 'ABBA',
+      //   song: `S.O.S`,
+      //   lyrics: `Where are those happy days,
+      //             they seem so hard to find,
+      //             I tried to reach for you,
+      //             but you have closed your mind,
+      //             Whatever happened to our love?,
+      //             I wish I understood`
+      // },
+      // ~~~ B ~~~
+      // {
+      //   artist: 'Black Sabbath',
+      //   song: `War Pigs`,
+      //   lyrics: `Generals gathered in their masses,
+      //             Just like witches at black masses,
+      //             Evil minds that plot destruction,
+      //             Sorcerer of death's construction,
+      //             In the fields the bodies burning,
+      //             As the war machine keeps turning`
+      // },
     // {
       //   artist: 'Chuck Berry',
       //   song: 'Johnny B Goode', 
@@ -161,16 +243,6 @@ const songList = [
       //             You shut me up and blamed it on the brown`
       // },
       // {
-      //   artist: 'Arctic Monkeys',
-      //   song: 'Do I Wanna Know?',
-      //   lyrics: `Have you got color in your cheeks,
-      //             Do you ever get the feeling that you can't shift the tide,
-      //             That sticks around like something's in your teeth,
-      //             And some aces up your sleeve,
-      //             I had no idea that you're in deep,
-      //             I dreamt about you near me every night this week`
-      // },
-      // {
       //   artist: 'Bonnie Tyler',
       //   song: 'Holding Out for a Hero',
       //   lyrics: `Where have all the good men gone,
@@ -281,16 +353,6 @@ const songList = [
       //             I'm the one "for a good time call"`
       // },
       // {
-      //   artist: 'Black Sabbath',
-      //   song: `War Pigs`,
-      //   lyrics: `Generals gathered in their masses,
-      //             Just like witches at black masses,
-      //             Evil minds that plot destruction,
-      //             Sorcerer of death's construction,
-      //             In the fields the bodies burning,
-      //             As the war machine keeps turning`
-      // },
-      // {
       //   artist: 'Rage Against The Machine',
       //   song: `Sleep Now in the Fire`,
       //   lyrics: `The world is my expense,
@@ -299,16 +361,6 @@ const songList = [
       //             And I protect it with fire,
       //             So raise your fists,
       //             And march around`
-      // },
-      // {
-      //   artist: 'Ariana Grande',
-      //   song: `7 Rings`,
-      //   lyrics: `Yeah breakfast at Tiffany's and bottles of bubbles,
-      //             Girls with tattoos who like getting in trouble,
-      //             Lashes and diamonds ATM machines,
-      //             Buy myself all of my favorite things (Yeah),
-      //             Been through some bad shit I should be a sad bitch,
-      //             Who woulda thought it'd turn me to a savage?`
       // },
       // {
       //   artist: 'Joe Walsh',
@@ -331,26 +383,6 @@ const songList = [
       //               These four walls are closing in`
       // },
       // {
-      //   artist: 'Alice Cooper',
-      //   song: `Poison`,
-      //   lyrics: `Your cruel device,
-      //               Your blood like ice,
-      //               One look could kill,
-      //               My pain your thrill,
-      //               I wanna love you but I better not touch (don't touch),
-      //               I wanna hold you but my senses tell me to stop`
-      // },
-      // {
-      //   artist: 'ABBA',
-      //   song: `S.O.S`,
-      //   lyrics: `Where are those happy days,
-      //             they seem so hard to find,
-      //             I tried to reach for you,
-      //             but you have closed your mind,
-      //             Whatever happened to our love?,
-      //             I wish I understood`
-      // },
-      // {
       //   artist: 'Michael Jackson',
       //   song: `Billie Jean`,
       //   lyrics: `She was more like a beauty queen from a movie scene,
@@ -359,16 +391,6 @@ const songList = [
       //             She said I am the one who will dance on the floor in the round,
       //             She told me her name was Billie Jean as she caused a scene,
       //             Then every head turned with eyes that dreamed of being the one`
-      // },
-      // {
-      //   artist: 'Aretha Franklin',
-      //   song: `Respect`,
-      //   lyrics: `What you want,
-      //             Baby I got it,
-      //             What you need,
-      //             Do you know I got it,
-      //             All I'm askin',
-      //             Is for a little respect when you get home (just a little bit)`
       // },
       // {
       //   artist: 'Dusty Springfield',
@@ -429,16 +451,6 @@ const songList = [
       //             Behind blue eyes,
       //             No one knows what it's like,
       //             To be hated`,
-      // },
-      // {
-      //   artist: 'The Animals',
-      //   song: `The House of the Rising Sun`,
-      //   lyrics: `There is a house in New Orleans,
-      //             They call the Rising Sun,
-      //             And it's been the ruin of many a poor boy,
-      //             And God I know I'm one,
-      //             My mother was a tailor,
-      //             She sewed my new blue jeans`,
       // },
       // {
       //   artist: 'MeatLoaf',
@@ -669,16 +681,6 @@ const songList = [
       //   Of a favorite song,
       //   So while she lay there sleeping,
       //   I read the paper in bed`,
-      // },
-      // {
-      //   artist: 'Alanis Morrissette',
-      //   song: `Ironic`,
-      //   lyrics: `An old man turned ninety-eight,
-      //             He won the lottery and died the next day,
-      //             It's a black fly in your Chardonnay,
-      //             It's a death row pardon two minutes too late,
-      //             Isn't it ironic don't you think,
-      //             It's like rain on your wedding day`,
       // },
       // {
       //   artist: 'The Beach Boys',

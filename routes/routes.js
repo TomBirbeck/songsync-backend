@@ -65,7 +65,7 @@ router.delete('/songs/:id', async (req, res, next) => {
         const data = await deleteSong(Number(req.params.id));
         res.json({success: true, payload: data});
     } catch (error) {
-        res.status(400);
+        res.status(401);
         res.json({message: 'error occurred when deleting song', payload: error});
     }
     next();

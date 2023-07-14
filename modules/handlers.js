@@ -78,7 +78,8 @@ export const getUsedSongById = async (id) => {
 }
 
 export const deleteAllUsedSongs = async () => {
-    const res = await pool.query('DELETE FROM used_songs;')
+    const res = await pool.query('DELETE FROM used_songs;');
+    return res.rows
 }
 
 // ~~~ DAILY SONG EVENT ~~~
