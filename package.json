@@ -10,7 +10,9 @@
     "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js --forceExit",
     "createTable": "node ./db/scripts/createTable.js",
     "deleteTable": "node ./db/scripts/deleteTable.js",
-    "popTable": "node ./db/scripts/populateTable.js"
+    "popTable": "node ./db/scripts/populateTable.js",
+    "createTestTables": "node ./db/scripts/createTestTable.js",
+    "popTestTables": "node ./db/scripts/populateTestTables.js"
   },
   "repository": {
     "type": "git",
