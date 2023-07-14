@@ -1,6 +1,8 @@
 import request from 'supertest';
 import app from '../../server/index.js';
 
+// !!!!!!!!!! BEFORE RUNNING TESTS, YOU SHOULD UPDATE HANDLERS TO USE TEST TABLES !!!!!!!!!!
+
 // ~~~ songs table routes tests ~~~
 
     test('get all songs', async () => {
@@ -91,8 +93,14 @@ import app from '../../server/index.js';
 
     // ~~~ todays song route test ~~~
 
-    test('get todays song', async () => {
-        await request(app).get('/todayssong', (req,res) => {
+    test('trying to request todays songs without auth should return error code 401', async () => {
+        const actual =  await request(app).delete('/todayssong');
+     expect(actual.statusCode).toBe(401);
+     });
+
+
+    test('get todays song with auth should work', async () => {
+        const actual = await request(app).get('/todayssong').set({"authorization": `Bearer ${process.env.JWT}`});
             const expectedBody = {
                 success: true,
                 payload: [{
@@ -100,15 +108,44 @@ import app from '../../server/index.js';
                     name: expect.any(String),
                     artist: expect.any(String),
                     lyrics: expect.any(String),
+                    status: expect.any(String),
                 }]
             };
-            expect(res.statusCode).toBe(200);
-            expect(res.headers['content-type']).toMatch(/json/);
-            expect(res.body).toStrictEqual(expectedBody);
-        });
+            expect(actual.statusCode).toBe(200);
+            expect(actual.headers['content-type']).toMatch(/json/);
+            expect(actual.body).toStrictEqual(expectedBody);
     });
-    test('get all used songs', async () => {
-        await request(app).get('/usedsongs', (req,res) => {
+
+    // ~~~ used songs route ~~~
+
+    test('trying to request used songs without auth should return error code 401', async () => {
+        const actual =  await request(app).delete('/usedsongs');
+     expect(actual.statusCode).toBe(401);
+     });
+
+    test('get set with auth should work', async () => {
+        const actual = await request(app).get('/usedsongs').set({"authorization": `Bearer ${process.env.JWT}`});
+            const expectedBody = {
+                    success: true,
+                    payload: expect.arrayContaining([expect.objectContaining({
+                        id: expect.any(Number),
+                        name: expect.any(String),
+                    })])
+            };
+            expect(actual.statusCode).toBe(200);
+            expect(actual.headers['content-type']).toMatch(/json/);
+            expect(actual.body).toStrictEqual(expectedBody);
+    });
+
+    // ~~~set daily song route~~~
+    
+    test('trying set daily song without auth should return error code 401', async () => {
+        const actual =  await request(app).delete('/setdailysong');
+     expect(actual.statusCode).toBe(401);
+     });
+
+    test('set daily song with auth should work', async () => {
+        const actual = await request(app).get('/setdailysong').set({"authorization": `Bearer ${process.env.JWT}`});
             const expectedBody = {
                     success: true,
                     payload: expect.arrayContaining([expect.objectContaining({
@@ -118,9 +155,8 @@ import app from '../../server/index.js';
                         lyrics: expect.any(String),
                     })])
             };
-            expect(res.statusCode).toBe(200);
-            expect(res.headers['content-type']).toMatch(/json/);
-            expect(res.body).toStrictEqual(expectedBody);
-        });
+            expect(actual.statusCode).toBe(200);
+            expect(actual.headers['content-type']).toMatch(/json/);
+            expect(actual.body).toStrictEqual(expectedBody);
     });
 

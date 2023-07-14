@@ -1,6 +1,6 @@
 import { addSong, addTodaysSong, addUsedSong, deleteAllUsedSongs, deleteSong, editSong, emptyTodaysSong, getAllSongs, getAllUsedSongs, getAllUsedSongsCount, getSongById, getSongCount, getTodaysSong, getUsedSongById } from "../handlers";
 
-// !!!!!!!!!! BEFORE RUNNING TESTS SHOULD UPDATE HANDLERS TO USE TEST TABLES !!!!!!!!!!
+// !!!!!!!!!! BEFORE RUNNING TESTS, YOU SHOULD UPDATE HANDLERS TO USE TEST TABLES !!!!!!!!!!
 
 describe('songs database handlers tests', () => {
 

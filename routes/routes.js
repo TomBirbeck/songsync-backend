@@ -78,7 +78,7 @@ router.get('/todayssong', async (req, res, next) => {
         const data = await getTodaysSong();
         res.json({success: true, payload: data});
     } catch (error) {
-        res.status(403);
+        res.status(401);
         res.json({message: 'error occurred during todays song request', payload: error});
     }
     next();
@@ -91,7 +91,7 @@ router.get('/usedsongs', async (req, res, next) => {
         const data = await getAllUsedSongs();
         res.json({success: true, payload: data});
     } catch (error) {
-        res.status(403);
+        res.status(401);
         res.json({message: 'error occurred during all used songs request', payload: error});
     }
     next();
@@ -104,7 +104,7 @@ router.post('/setdailysong', async (req, res, next) => {
         const data = await getNewDailySong();
         res.json({success: true, payload: data});
     } catch (error) {
-        res.status(403);
+        res.status(401);
         res.json({message: 'error occured when trying to set new daily song', payload: error});
     }
 })

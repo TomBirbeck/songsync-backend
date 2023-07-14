@@ -23,7 +23,7 @@ async function populateUsedSongs(songs) {
     }
   }
   
-//   populateUsedSongs(usedSongs);
+  populateUsedSongs(usedSongs);
 
   async function populateTestTodaysSong(song) {
     let res = await pool.query('INSERT INTO test_todays_song (id, name, artist, lyrics) VALUES ($1, $2, $3, $4) RETURNING *', [song.id, song.name, song.artist, song.lyrics]);
